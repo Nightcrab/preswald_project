@@ -1,20 +1,20 @@
-# Preswald requires Docker to run
+# Use Docker-in-Docker image (based on Alpine)
 FROM docker:stable-dind
 
-# Install Python
-RUN apt-get update && apt-get install -y \
+# Install dependencies
+RUN apk add --no-cache \
     python3 \
-    python3-pip \
+    py3-pip \
     curl
+
+# Install required Python packages
+RUN pip3 install --no-cache-dir preswald plotly pandas
 
 # Set the working directory inside the container
 WORKDIR /app
 
 # Copy the contents of the repository into the container
 COPY . .
-
-# Install required Python packages
-RUN pip install --no-cache-dir preswald plotly pandas
 
 # Default command to run
 CMD ["preswald", "deploy"]
