@@ -24,6 +24,3 @@ COPY . .
 
 # Install required Python packages
 RUN pip install --no-cache-dir preswald plotly pandas
-
-# Default command to run
-CMD ["preswald", "deploy"]
