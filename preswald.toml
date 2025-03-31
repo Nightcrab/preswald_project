@@ -1,7 +1,7 @@
 [project]
 title = "Dashboard Project"
 version = "0.1.0"
-port = 8501
+port = 3000
 slug = "paul-anderson-dashboard"  # Required: Unique identifier for your project
 entrypoint = "hello.py"    # Required: Main script to run when executing preswald run
 
