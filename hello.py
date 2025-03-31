@@ -6,7 +6,7 @@ YEAR = 2025
 
 text("# Housing Market Trends Dashboard")
 text("Dashboard by Paul Anderson using Preswald.\n\nData from https://www.kaggle.com/datasets/atharvasoundankar/global-housing-market-analysis-2015-2024.")
-text("Allows you to view trends in housing affordability in North American countries and a major countries in the EU.")
+text("Allows you to view trends in housing affordability in North American countries and major countries in the EU.")
 text("Showcases the dynamic UI elements `slider`, `checkbox`, and `selectbox` from Preswald.")
 
 # Load the CSV
